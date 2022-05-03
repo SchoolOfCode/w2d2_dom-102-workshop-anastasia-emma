@@ -1,6 +1,10 @@
 let pennies = 1;
 const output = document.querySelector("output");
-
+let extraTips = [
+  "Keep your pennies is a glass jar",
+  "Save money buy not eating!",
+  "Don't let your partner know...",
+];
 //Task 2
 const quote = document.querySelector(".quote");
 quote.innerText = "This is a funny quote, honest!"
@@ -12,11 +16,12 @@ h1Variable.style.textDecoration = 'underline';
 
 //Task 4
 const tipsList = document.querySelectorAll('#tips-list');
-for (i = 0; i < tipsList.length; i++) {
-  console.log(tipsList[i]);
+for (i = 0; i < extraTips.length; i++) {
+  console.log(extraTips[i]);
+  let ul = document.querySelector('ul')
   newLi = document.createElement('li');
-  newLi.innerText = tipsList[i].innerText;
-  tipsList.appendChild(newLi);
+  newLi.innerText = extraTips[i];
+  ul.appendChild(newLi);
   //create a li element
   //set the .innerText of the li element to the current tip 
   //append as child of ul
@@ -29,9 +34,3 @@ function handleClick() {
   pennies = pennies * 2;
   output.innerText = (`${pennies} pennies`)
 }
-
-let extraTips = [
-  "Keep your pennies is a glass jar",
-  "Save money buy not eating!",
-  "Don't let your partner know...",
-];
