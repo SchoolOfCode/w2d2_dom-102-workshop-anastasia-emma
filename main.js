@@ -1,5 +1,7 @@
 let pennies = 1;
 const output = document.querySelector("output");
+const quote = document.querySelector(".quote");
+quote.innerText = "This is a funny quote, honest!"
 
 function handleClick() {
   console.log("Im just to prove it's working!");
