@@ -15,18 +15,16 @@ console.log(h1Variable)
 h1Variable.style.textDecoration = 'underline';
 
 //Task 4
-const tipsList = document.querySelectorAll('#tips-list');
 for (i = 0; i < extraTips.length; i++) {
   console.log(extraTips[i]);
   let ul = document.querySelector('ul')
   newLi = document.createElement('li');
   newLi.innerText = extraTips[i];
   ul.appendChild(newLi);
-  //create a li element
-  //set the .innerText of the li element to the current tip 
-  //append as child of ul
-
 }
+
+//Task 5
+document.title = "Pennies From Heaven"
 
 //Task 1
 function handleClick() {
