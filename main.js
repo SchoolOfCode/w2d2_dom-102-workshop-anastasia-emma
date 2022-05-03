@@ -3,6 +3,8 @@ const output = document.querySelector("output");
 
 function handleClick() {
   console.log("Im just to prove it's working!");
+  pennies = pennies * 2;
+  output.innerText = (`${pennies} pennies`)
   // Double the number of pennies
   // display in the output tag
 }
