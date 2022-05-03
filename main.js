@@ -3,6 +3,10 @@ const output = document.querySelector("output");
 const quote = document.querySelector(".quote");
 quote.innerText = "This is a funny quote, honest!"
 
+h1Variable = document.querySelector('h1');
+console.log(h1Variable)
+h1Variable.style.textDecoration = 'underline';
+
 function handleClick() {
   console.log("Im just to prove it's working!");
   pennies = pennies * 2;
