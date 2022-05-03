@@ -23,8 +23,15 @@ for (i = 0; i < extraTips.length; i++) {
   ul.appendChild(newLi);
 }
 
+/*
 //Task 5
 document.title = "Pennies From Heaven"
+*/
+
+//Task 6
+function changePageTitle() {
+  document.title = "Pennies From Heaven";
+}
 
 //Task 1
 function handleClick() {
